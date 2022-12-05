@@ -8,27 +8,25 @@
 
 /* Begin PBXBuildFile section */
 		B5413A11293E377C00B04EEA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B5413A10293E377C00B04EEA /* AppDelegate.m */; };
-		B5413A14293E377C00B04EEA /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B5413A13293E377C00B04EEA /* SceneDelegate.m */; };
-		B5413A17293E377C00B04EEA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5413A16293E377C00B04EEA /* ViewController.m */; };
-		B5413A1A293E377C00B04EEA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5413A18293E377C00B04EEA /* Main.storyboard */; };
 		B5413A1C293E377D00B04EEA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5413A1B293E377D00B04EEA /* Assets.xcassets */; };
 		B5413A1F293E377D00B04EEA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5413A1D293E377D00B04EEA /* LaunchScreen.storyboard */; };
 		B5413A22293E377D00B04EEA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B5413A21293E377D00B04EEA /* main.m */; };
+		B5413A2F293E399E00B04EEA /* QuizViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5413A2D293E399E00B04EEA /* QuizViewController.m */; };
+		B5413A30293E399E00B04EEA /* QuizViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B5413A2E293E399E00B04EEA /* QuizViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		B5413A0C293E377C00B04EEA /* Quiz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Quiz.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5413A0F293E377C00B04EEA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		B5413A10293E377C00B04EEA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		B5413A12293E377C00B04EEA /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
-		B5413A13293E377C00B04EEA /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
-		B5413A15293E377C00B04EEA /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		B5413A16293E377C00B04EEA /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		B5413A19293E377C00B04EEA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B5413A1B293E377D00B04EEA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B5413A1E293E377D00B04EEA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B5413A20293E377D00B04EEA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B5413A21293E377D00B04EEA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B5413A28293E38FD00B04EEA /* readme.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = readme.md; sourceTree = "<group>"; };
+		B5413A2C293E399E00B04EEA /* QuizViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QuizViewController.h; sourceTree = "<group>"; };
+		B5413A2D293E399E00B04EEA /* QuizViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QuizViewController.m; sourceTree = "<group>"; };
+		B5413A2E293E399E00B04EEA /* QuizViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QuizViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +43,7 @@
 		B5413A03293E377C00B04EEA = {
 			isa = PBXGroup;
 			children = (
+				B5413A28293E38FD00B04EEA /* readme.md */,
 				B5413A0E293E377C00B04EEA /* Quiz */,
 				B5413A0D293E377C00B04EEA /* Products */,
 			);
@@ -63,15 +62,13 @@
 			children = (
 				B5413A0F293E377C00B04EEA /* AppDelegate.h */,
 				B5413A10293E377C00B04EEA /* AppDelegate.m */,
-				B5413A12293E377C00B04EEA /* SceneDelegate.h */,
-				B5413A13293E377C00B04EEA /* SceneDelegate.m */,
-				B5413A15293E377C00B04EEA /* ViewController.h */,
-				B5413A16293E377C00B04EEA /* ViewController.m */,
-				B5413A18293E377C00B04EEA /* Main.storyboard */,
 				B5413A1B293E377D00B04EEA /* Assets.xcassets */,
 				B5413A1D293E377D00B04EEA /* LaunchScreen.storyboard */,
 				B5413A20293E377D00B04EEA /* Info.plist */,
 				B5413A21293E377D00B04EEA /* main.m */,
+				B5413A2C293E399E00B04EEA /* QuizViewController.h */,
+				B5413A2D293E399E00B04EEA /* QuizViewController.m */,
+				B5413A2E293E399E00B04EEA /* QuizViewController.xib */,
 			);
 			path = Quiz;
 			sourceTree = "<group>";
@@ -135,7 +132,7 @@
 			files = (
 				B5413A1F293E377D00B04EEA /* LaunchScreen.storyboard in Resources */,
 				B5413A1C293E377D00B04EEA /* Assets.xcassets in Resources */,
-				B5413A1A293E377C00B04EEA /* Main.storyboard in Resources */,
+				B5413A30293E399E00B04EEA /* QuizViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -146,24 +143,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B5413A17293E377C00B04EEA /* ViewController.m in Sources */,
+				B5413A2F293E399E00B04EEA /* QuizViewController.m in Sources */,
 				B5413A11293E377C00B04EEA /* AppDelegate.m in Sources */,
 				B5413A22293E377D00B04EEA /* main.m in Sources */,
-				B5413A14293E377C00B04EEA /* SceneDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		B5413A18293E377C00B04EEA /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B5413A19293E377C00B04EEA /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		B5413A1D293E377D00B04EEA /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -296,8 +284,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Quiz/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -323,8 +310,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Quiz/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
