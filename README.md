@@ -1,6 +1,6 @@
 # iOS_StudyForObjc
 
-- 아론 힐리가스의 THE BIG NERD RANCH GUIDE 4판    
+## 아론 힐리가스의 THE BIG NERD RANCH GUIDE 4판    
 iOS 프로그래밍 책을 기반으로 하는 Study    
 
 chapter 1 간단한 iOS 앱 만들기   
