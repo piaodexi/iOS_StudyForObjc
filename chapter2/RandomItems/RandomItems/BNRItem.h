@@ -16,6 +16,15 @@ NS_ASSUME_NONNULL_BEGIN
     int _valueInDollars;
     NSDate *_dateCreated;
 }
+//클래스 메소드
++ (instancetype)randomItem;
+//BNRItem의 지정 초기화 메소드
+- (instancetype)initWithItemName: (NSString *)name
+                  valueInDollars:(int)value
+                    serialNumber:(NSString *)sNumber;
+
+- (instancetype)initWithItemName:(NSString *)name;
+
 - (void)setItemName: (NSString *)str;
 - (NSString *)itemName;
 
@@ -27,12 +36,6 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (NSDate *)dateCreated;
 
-//초기화 메소드
-- (instancetype)initWithItemName: (NSString *)name
-valueInDollars:(int)value
-                    serialNumber:(NSString *)sNumber;
-
-- (instancetype)initWithItemName:(NSString *)sNumber;
 @end
 
 NS_ASSUME_NONNULL_END
