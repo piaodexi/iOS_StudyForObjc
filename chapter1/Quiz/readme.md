@@ -25,6 +25,7 @@ quiz의 nib 파일은 프로그램이 처음 실행될 때 불러오게 된다.
 - SceneDelegate.h, SceneDelegate.m 삭제
 - AppDelegate 클래스에서 configurationForConnectingSceneSession, didDiscardSceneSessions 메서드를 삭제
 - AppDelegate.h에 프로퍼티를 선언 @property (nonatomic, strong) UIWindow *window;
+- project -> targets -> info -> main stroyboard file base name 삭제 
 
 ## AppDelegate 
 - 앱 델리게이트는 앱을 위해 하나의 최상위 UIWIndow를 관리한다. ( ?? 씬딜리게이트 생기고 나서는 그짝에 프로퍼티가 생성됬는데?? 엣날이야기인가보다)   
