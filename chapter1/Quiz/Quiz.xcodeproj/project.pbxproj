@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		B5413A11293E377C00B04EEA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B5413A10293E377C00B04EEA /* AppDelegate.m */; };
 		B5413A1C293E377D00B04EEA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5413A1B293E377D00B04EEA /* Assets.xcassets */; };
-		B5413A1F293E377D00B04EEA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5413A1D293E377D00B04EEA /* LaunchScreen.storyboard */; };
 		B5413A22293E377D00B04EEA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B5413A21293E377D00B04EEA /* main.m */; };
 		B5413A2F293E399E00B04EEA /* QuizViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5413A2D293E399E00B04EEA /* QuizViewController.m */; };
 		B5413A30293E399E00B04EEA /* QuizViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B5413A2E293E399E00B04EEA /* QuizViewController.xib */; };
@@ -20,7 +19,6 @@
 		B5413A0F293E377C00B04EEA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		B5413A10293E377C00B04EEA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		B5413A1B293E377D00B04EEA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		B5413A1E293E377D00B04EEA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B5413A20293E377D00B04EEA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B5413A21293E377D00B04EEA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B5413A28293E38FD00B04EEA /* readme.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = readme.md; sourceTree = "<group>"; };
@@ -63,7 +61,6 @@
 				B5413A0F293E377C00B04EEA /* AppDelegate.h */,
 				B5413A10293E377C00B04EEA /* AppDelegate.m */,
 				B5413A1B293E377D00B04EEA /* Assets.xcassets */,
-				B5413A1D293E377D00B04EEA /* LaunchScreen.storyboard */,
 				B5413A20293E377D00B04EEA /* Info.plist */,
 				B5413A21293E377D00B04EEA /* main.m */,
 				B5413A2C293E399E00B04EEA /* QuizViewController.h */,
@@ -130,7 +127,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B5413A1F293E377D00B04EEA /* LaunchScreen.storyboard in Resources */,
 				B5413A1C293E377D00B04EEA /* Assets.xcassets in Resources */,
 				B5413A30293E399E00B04EEA /* QuizViewController.xib in Resources */,
 			);
@@ -150,17 +146,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		B5413A1D293E377D00B04EEA /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B5413A1E293E377D00B04EEA /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		B5413A23293E377D00B04EEA /* Debug */ = {
