@@ -17,7 +17,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen]bounds]];
-    
+    self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen] bundle];
     HypnosisViewController *hvc = [[HypnosisViewController alloc] init];
     
     //앱 번들을 나타내는 객체의 포인터를 가져온다

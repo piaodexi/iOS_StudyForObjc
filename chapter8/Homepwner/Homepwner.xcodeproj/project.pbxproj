@@ -8,29 +8,30 @@
 
 /* Begin PBXBuildFile section */
 		B5413AE72942D0CD00B04EEA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B5413AE62942D0CD00B04EEA /* AppDelegate.m */; };
-		B5413AEA2942D0CD00B04EEA /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B5413AE92942D0CD00B04EEA /* SceneDelegate.m */; };
-		B5413AED2942D0CD00B04EEA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5413AEC2942D0CD00B04EEA /* ViewController.m */; };
-		B5413AF02942D0CD00B04EEA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5413AEE2942D0CD00B04EEA /* Main.storyboard */; };
 		B5413AF22942D0CE00B04EEA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5413AF12942D0CE00B04EEA /* Assets.xcassets */; };
-		B5413AF52942D0CE00B04EEA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5413AF32942D0CE00B04EEA /* LaunchScreen.storyboard */; };
 		B5413AF82942D0CE00B04EEA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B5413AF72942D0CE00B04EEA /* main.m */; };
 		B5413AFF2942D0E500B04EEA /* readme.md in Resources */ = {isa = PBXBuildFile; fileRef = B5413AFE2942D0E500B04EEA /* readme.md */; };
+		B5413B082946B5E200B04EEA /* ItemsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5413B062946B5E200B04EEA /* ItemsViewController.m */; };
+		B5413B092946B5E200B04EEA /* ItemsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B5413B072946B5E200B04EEA /* ItemsViewController.xib */; };
+		B5413B0C2946B92A00B04EEA /* BNRItem.m in Sources */ = {isa = PBXBuildFile; fileRef = B5413B0B2946B92A00B04EEA /* BNRItem.m */; };
+		B5413B0F2946BB5700B04EEA /* ItemStore.m in Sources */ = {isa = PBXBuildFile; fileRef = B5413B0E2946BB5700B04EEA /* ItemStore.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		B5413AE22942D0CD00B04EEA /* Homepwner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Homepwner.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5413AE52942D0CD00B04EEA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		B5413AE62942D0CD00B04EEA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		B5413AE82942D0CD00B04EEA /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
-		B5413AE92942D0CD00B04EEA /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
-		B5413AEB2942D0CD00B04EEA /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		B5413AEC2942D0CD00B04EEA /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		B5413AEF2942D0CD00B04EEA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B5413AF12942D0CE00B04EEA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		B5413AF42942D0CE00B04EEA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B5413AF62942D0CE00B04EEA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B5413AF72942D0CE00B04EEA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B5413AFE2942D0E500B04EEA /* readme.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = readme.md; sourceTree = "<group>"; };
+		B5413B052946B5E200B04EEA /* ItemsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ItemsViewController.h; sourceTree = "<group>"; };
+		B5413B062946B5E200B04EEA /* ItemsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ItemsViewController.m; sourceTree = "<group>"; };
+		B5413B072946B5E200B04EEA /* ItemsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ItemsViewController.xib; sourceTree = "<group>"; };
+		B5413B0A2946B92A00B04EEA /* BNRItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BNRItem.h; path = ../../../chapter2/RandomItems/RandomItems/BNRItem.h; sourceTree = "<group>"; };
+		B5413B0B2946B92A00B04EEA /* BNRItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BNRItem.m; path = ../../../chapter2/RandomItems/RandomItems/BNRItem.m; sourceTree = "<group>"; };
+		B5413B0D2946BB5700B04EEA /* ItemStore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ItemStore.h; sourceTree = "<group>"; };
+		B5413B0E2946BB5700B04EEA /* ItemStore.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ItemStore.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,15 +67,16 @@
 			children = (
 				B5413AE52942D0CD00B04EEA /* AppDelegate.h */,
 				B5413AE62942D0CD00B04EEA /* AppDelegate.m */,
-				B5413AE82942D0CD00B04EEA /* SceneDelegate.h */,
-				B5413AE92942D0CD00B04EEA /* SceneDelegate.m */,
-				B5413AEB2942D0CD00B04EEA /* ViewController.h */,
-				B5413AEC2942D0CD00B04EEA /* ViewController.m */,
-				B5413AEE2942D0CD00B04EEA /* Main.storyboard */,
 				B5413AF12942D0CE00B04EEA /* Assets.xcassets */,
-				B5413AF32942D0CE00B04EEA /* LaunchScreen.storyboard */,
 				B5413AF62942D0CE00B04EEA /* Info.plist */,
 				B5413AF72942D0CE00B04EEA /* main.m */,
+				B5413B052946B5E200B04EEA /* ItemsViewController.h */,
+				B5413B062946B5E200B04EEA /* ItemsViewController.m */,
+				B5413B072946B5E200B04EEA /* ItemsViewController.xib */,
+				B5413B0A2946B92A00B04EEA /* BNRItem.h */,
+				B5413B0B2946B92A00B04EEA /* BNRItem.m */,
+				B5413B0D2946BB5700B04EEA /* ItemStore.h */,
+				B5413B0E2946BB5700B04EEA /* ItemStore.m */,
 			);
 			path = Homepwner;
 			sourceTree = "<group>";
@@ -136,10 +138,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B5413AF52942D0CE00B04EEA /* LaunchScreen.storyboard in Resources */,
 				B5413AF22942D0CE00B04EEA /* Assets.xcassets in Resources */,
+				B5413B092946B5E200B04EEA /* ItemsViewController.xib in Resources */,
 				B5413AFF2942D0E500B04EEA /* readme.md in Resources */,
-				B5413AF02942D0CD00B04EEA /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -150,33 +151,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B5413AED2942D0CD00B04EEA /* ViewController.m in Sources */,
+				B5413B082946B5E200B04EEA /* ItemsViewController.m in Sources */,
+				B5413B0C2946B92A00B04EEA /* BNRItem.m in Sources */,
 				B5413AE72942D0CD00B04EEA /* AppDelegate.m in Sources */,
 				B5413AF82942D0CE00B04EEA /* main.m in Sources */,
-				B5413AEA2942D0CD00B04EEA /* SceneDelegate.m in Sources */,
+				B5413B0F2946BB5700B04EEA /* ItemStore.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		B5413AEE2942D0CD00B04EEA /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B5413AEF2942D0CD00B04EEA /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		B5413AF32942D0CE00B04EEA /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B5413AF42942D0CE00B04EEA /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		B5413AF92942D0CE00B04EEA /* Debug */ = {
@@ -301,7 +284,6 @@
 				INFOPLIST_FILE = Homepwner/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -328,7 +310,6 @@
 				INFOPLIST_FILE = Homepwner/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
