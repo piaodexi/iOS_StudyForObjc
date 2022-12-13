@@ -54,6 +54,10 @@
         _valueInDollars = value;
         //_dateCreated를 현재 날짜와 시간으로 설정한다.
         _dateCreated = [[NSDate alloc]init];
+        //NSUUID 객체를 만들고 그것의 문자열을 가져온다.
+        NSUUID *uuid = [[NSUUID alloc] init];
+        NSString *key = [uuid UUIDString];
+        _itemKey = key;
     }
     //새로 초기화된 객체의 주소를 반환한다.
     return self;

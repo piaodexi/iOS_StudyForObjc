@@ -36,6 +36,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (NSDate *)dateCreated;
 
+@property (nonatomic, copy)NSString *itemKey;
+
 @end
 
 NS_ASSUME_NONNULL_END
