@@ -8,6 +8,36 @@
 #import "BNRItem.h"
 
 @implementation BNRItem
+/**
+ 객체가 인코딩될 때(즉, encodeObjcet:forKey:에서 첫 번째 인자), 그 객체는 encodeWithcoder:메시지를 받는다. 그 encodeWithCoder: 메소드가 실행되는 동안, 해당 객체 인스턴스 변수들은 encodeObject:forKey:를 사용해 인코딩한다. 따라서 객체를 인코딩하는 것은 각 객체가 자신의 친구를 인코딩하고 다시 그 친구가 친구를 인코딩하는 등의 재귀적인 동작이다. */
+- (void)encodeWithCoder:(NSCoder *)aCoder
+{
+    [aCoder encodeObject:self.itemName forKey:@"itemName"];
+    [aCoder encodeObject:self.serialNumber forKey:@"serialNumber"];
+    [aCoder encodeObject:self.dateCreated forKey:@"dateCreated"];
+    [aCoder encodeObject:self.itemKey forKey:@"itemKey"];
+    
+    [aCoder encodeInt:self.valueInDollars forKey:@"valueInDollars"];
+    
+}
+/**
+ 이 메소드도 NSCoder 인자를 가진다는 점에 주목해야한다. initWithCoder: 에서 NSCoder는 BNRItem의 초기화에서 사용할 데이터 전체이다. 또한 다시 객체를 얻기 위해 NSCoder 컨테이너에 decodeObjectForKey:를 보냈고 valueInDollars를 얻기 위해서는 decodeIntForKey:를 보냈다.
+ 
+ 
+ */
+- (instancetype)initWithCoder:(NSCoder *)aDecoder
+{
+    self = [super init];
+    if (self) {
+        _itemName = [aDecoder decodeObjectForKey:@"itemName"];
+        _serialNumber = [aDecoder decodeObjectForKey:@"serialNumber"];
+        _dateCreated = [aDecoder decodeObjectForKey:@"dateCreated"];
+        _itemKey = [aDecoder decodeObjectForKey:@"itemKey"];
+        
+        _valueInDollars = [aDecoder decodeIntForKey:@"valueInDollars"];
+    }
+    return self;
+}
 //클래스 메소드 구현하기
 + (instancetype)randomItem {
     //3개의 형용사 배열을 만든다.

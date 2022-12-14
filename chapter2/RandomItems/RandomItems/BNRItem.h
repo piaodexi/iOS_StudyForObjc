@@ -8,8 +8,10 @@
 #import <Foundation/Foundation.h>
 
 NS_ASSUME_NONNULL_BEGIN
-
-@interface BNRItem : NSObject
+/**
+ 인스턴스들을 아카이브하고 언아카이브해야 할 클래스들은 NSCoding프로토콜을 반드시 따라야 한다.
+ */
+@interface BNRItem : NSObject <NSCopying>
 {
     NSString *_itemName;
     NSString *_serialNumber;
