@@ -16,10 +16,12 @@
 @implementation imageStore
 + (instancetype)sharedStore
 {
-    static imageStore *sharedStore = nil;
-    if (sharedStore) {
+    static imageStore *sharedStore;
+
+    if (!sharedStore) {
         sharedStore = [[self alloc] initPrivate];
     }
+
     return sharedStore;
 }
 // init을 직접 호출해서는 안된다.
@@ -34,27 +36,26 @@
 - (instancetype)initPrivate
 {
     self = [super init];
+
     if (self) {
         _dic = [[NSMutableDictionary alloc] init];
     }
+
     return self;
 }
 - (void)setImage:(UIImage *)image forKey:(NSString *)key
 {
-    [self.dic setObject:image forKey:key];
-    //self.dic[key] = image;
+    self.dic[key] = image;
 }
 - (UIImage *)imageForKey:(NSString *)key
 {
-    return [self.dic objectForKey:key];
-    //return self.dic[key];
+    return self.dic[key];
 }
 - (void)deleteImageForKey:(NSString *)key
 {
     if (!key) {
         return;
     }
-    
     [self.dic removeObjectForKey:key];
 }
 @end

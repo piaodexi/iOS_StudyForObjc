@@ -112,5 +112,25 @@
     self.navigationItem.title = _item.itemName;
 }
 
+//모호한 레이아웃 테스트 코드
+//- (void)viewDidLayoutSubviews
+//{
+//    for (UIView *subview in self.view.subviews) {
+//        if ([subview hasAmbiguousLayout]){
+//            NSLog(@"AMBIGUOS : %@",subview);
+//        }
+//    }
+//}
+//
+//- (IBAction)testBt:(id)sender {
+//    [self.view endEditing:YES];
+//
+//    for (UIView *subview in self.view.subviews) {
+//        if ([subview hasAmbiguousLayout]){
+//            [subview exerciseAmbiguityInLayout];
+//        }
+//    }
+//}
+
 
 @end

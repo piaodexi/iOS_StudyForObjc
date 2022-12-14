@@ -22,17 +22,17 @@
  코드를 보면 파일명에 확장자를 사용하지 않았다. 이것은 NSBundle이 알아내기 때문이다. 또한 self를 xib파일의 소유자로 전달한다. 이것은 실행 시에 메인 NSBundle이 nib파일을 분석할때 ItemsViewController 인스턴스를 xib 파일의 File's Owner로 설정한다.
  ItemsViewController가 처음 headerview 메시지를 받으면 headerview.xib을 로드하고 headerview 인스턴스 변수에서 뷰 객체에 대한 포인터를 유지하게 된다. 버튼들은 사용자가 탭할 때 itemsviewcontroller에 메시지를 보낸다.
  */
-- (UIView *)headerView
-{
-    //headerView가 아직 로드되지 않았다면
-    if (!_headerView) {
-        //headerView.xib을 로드한다.
-        [[NSBundle mainBundle] loadNibNamed:@"HeaderView"
-                                      owner:self
-                                    options:nil];
-    }
-    return _headerView;
-}
+//- (UIView *)headerView
+//{
+//    //headerView가 아직 로드되지 않았다면
+//    if (!_headerView) {
+//        //headerView.xib을 로드한다.
+//        [[NSBundle mainBundle] loadNibNamed:@"HeaderView"
+//                                      owner:self
+//                                    options:nil];
+//    }
+//    return _headerView;
+//}
 // 다른 메소드
 - (IBAction)addNewItem:(id)sender
 {
@@ -96,8 +96,8 @@
     [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"UITableViewCell"];
     
     //테이블뷰에 헤더뷰를 알린다.
-    UIView *header = self.headerView;
-    [self.tableView setTableHeaderView:header];
+//    UIView *header = self.headerView;
+//    [self.tableView setTableHeaderView:header];
 }
 - (void)viewWillAppear:(BOOL)animated
 {
