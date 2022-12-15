@@ -8,6 +8,42 @@
 #import "BNRItem.h"
 
 @implementation BNRItem
+- (void)setThumbnailFromImage:(UIImage *)image
+{
+    CGSize origImageSize = image.size;
+    
+    //섬네일 영역
+    CGRect newRect = CGRectMake(0,0,40,40);
+    // 같은 종횡비를 유지하기 위해 축적비를 계산한다.
+    float ratio = MAX(newRect.size.width / origImageSize.width, newRect.size.height / origImageSize.height);
+    
+    //섬네일 영역과 같은 크기로 투명 비트맵 컨텍스트를 만든다.
+    UIGraphicsBeginImageContextWithOptions(newRect.size, NO, 0.0);
+    
+    //모서리가 둥근 베지어패스를 만든다.
+    UIBezierPath *path = [UIBezierPath bezierPathWithRoundedRect:newRect cornerRadius:5.0];
+    
+    //모든 드로잉 클립을 이 라운드 영역에 만든다.
+    [path addClip];
+    
+    //이미지를 섬네일 영역의 중앙에 놓는다.
+    CGRect projectRect;
+    projectRect.size.width = ratio * origImageSize.width;
+    projectRect.size.height = ratio * origImageSize.height;
+    projectRect.origin.x = (newRect.size.width - projectRect.size.width) / 2.0;
+    projectRect.origin.y = (newRect.size.height - projectRect.size.height) / 2.0;
+    
+    //이미지를 그 위치에 그린다.
+    [image drawInRect:projectRect];
+    
+    //이미지 컨텍스트로부터 해당 이미지를 얻어 thumbnail로 유지한다.
+    UIImage *smallImage = UIGraphicsGetImageFromCurrentImageContext();
+    self.thumbnail = smallImage;
+    
+    //이미지 컨텍스트 리소스를 정리한다.
+    UIGraphicsEndImageContext();
+    
+}
 /**
  객체가 인코딩될 때(즉, encodeObjcet:forKey:에서 첫 번째 인자), 그 객체는 encodeWithcoder:메시지를 받는다. 그 encodeWithCoder: 메소드가 실행되는 동안, 해당 객체 인스턴스 변수들은 encodeObject:forKey:를 사용해 인코딩한다. 따라서 객체를 인코딩하는 것은 각 객체가 자신의 친구를 인코딩하고 다시 그 친구가 친구를 인코딩하는 등의 재귀적인 동작이다. */
 - (void)encodeWithCoder:(NSCoder *)aCoder

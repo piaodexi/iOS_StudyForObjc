@@ -6,6 +6,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
 NS_ASSUME_NONNULL_BEGIN
 /**
@@ -40,6 +41,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic, copy)NSString *itemKey;
 
+@property (nonatomic, strong) UIImage *thumbnail;
+- (void)setThumbnailFromImage:(UIImage *)image;
 @end
 
 NS_ASSUME_NONNULL_END
