@@ -34,23 +34,17 @@
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="serialNubmer" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LYV-gr-qik">
                         <rect key="frame" x="47.999999999999986" y="22" width="214.66666666666663" height="20"/>
-                        <constraints>
-                            <constraint firstAttribute="height" constant="20" id="5o9-b4-Opq"/>
-                        </constraints>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hzb-TU-zAW">
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hzb-TU-zAW">
                         <rect key="frame" x="47.999999999999986" y="0.0" width="214.66666666666663" height="20"/>
-                        <constraints>
-                            <constraint firstAttribute="height" constant="20" id="UIR-7X-5Q6"/>
-                        </constraints>
                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1000" verticalHuggingPriority="251" text="value" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jvx-b5-zSi">
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1000" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="value" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jvx-b5-zSi">
                         <rect key="frame" x="270.66666666666669" y="11.666666666666664" width="40.333333333333314" height="21"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
@@ -62,7 +56,6 @@
                     <constraint firstAttribute="trailing" secondItem="jvx-b5-zSi" secondAttribute="trailing" constant="9" id="2Z8-Af-Czx"/>
                     <constraint firstItem="aPj-Wx-Qu5" firstAttribute="trailing" secondItem="rdq-rs-hiY" secondAttribute="trailing" id="49y-Wh-6Up"/>
                     <constraint firstItem="jvx-b5-zSi" firstAttribute="leading" secondItem="LYV-gr-qik" secondAttribute="trailing" constant="8" symbolic="YES" id="D8e-5s-Aez"/>
-                    <constraint firstItem="aPj-Wx-Qu5" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="Gtw-cg-WTx"/>
                     <constraint firstItem="rdq-rs-hiY" firstAttribute="bottom" secondItem="aPj-Wx-Qu5" secondAttribute="bottom" id="SLU-uP-aV0"/>
                     <constraint firstItem="rdq-rs-hiY" firstAttribute="leading" secondItem="aPj-Wx-Qu5" secondAttribute="leading" id="SfJ-92-wHl"/>
                     <constraint firstItem="aPj-Wx-Qu5" firstAttribute="leading" secondItem="rdq-rs-hiY" secondAttribute="leading" id="TYB-ka-tat"/>
@@ -81,6 +74,7 @@
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="aW0-zy-SZf"/>
             <connections>
+                <outlet property="imageViewHeightConstraint" destination="JQX-2t-Q6j" id="xgp-9t-nNK"/>
                 <outlet property="nameLabel" destination="hzb-TU-zAW" id="JdC-dD-KC0"/>
                 <outlet property="serialNumberLabel" destination="LYV-gr-qik" id="S4M-TM-7jk"/>
                 <outlet property="thumbnailView" destination="aPj-Wx-Qu5" id="mA1-Qz-kCa"/>
